@@ -22,6 +22,9 @@ It detects the active website, measures active usage time, assigns a category, a
 
 The backend stores the data in PostgreSQL/TimescaleDB, making the data available for historical analysis and visualization.
 
+<img width="511" height="846" alt="Screenshot1" src="https://github.com/user-attachments/assets/5956ed8a-0da4-46bd-a016-9517052e33a4" />
+
+
 ## ✨ Features
 
 * **Active Website Tracking** — Tracks time spent on the currently active website.
