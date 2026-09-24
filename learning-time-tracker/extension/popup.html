@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learning Time Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <div class="app__title">
+        <span class="app__dot"></span>
+        Learning Time Tracker
+      </div>
+      <div class="app__date" id="dateLabel"></div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__label">Today's active time</div>
+      <div class="hero__value" id="totalTime">0m</div>
+    </section>
+
+    <section class="panel">
+      <div class="panel__title">Top websites</div>
+      <ul class="site-list" id="siteList">
+        <li class="empty-state">No activity tracked yet today.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <div class="panel__title">Recent activity</div>
+      <ul class="activity-list" id="activityList">
+        <li class="empty-state">Nothing recorded yet.</li>
+      </ul>
+    </section>
+
+    <footer class="app__footer">
+      Data stored locally &middot; not yet synced to a backend
+    </footer>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

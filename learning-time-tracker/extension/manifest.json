@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Learning Time Tracker",
+  "version": "1.0.0",
+  "description": "Tracks active time spent on websites for personal learning analytics.",
+
+  "permissions": [
+    "tabs",
+    "idle",
+    "storage",
+    "alarms"
+  ],
+
+  "host_permissions": [
+    "http://127.0.0.1:8000/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "action": {
+    "default_title": "Learning Time Tracker",
+    "default_popup": "popup.html"
+  }
+}
+
